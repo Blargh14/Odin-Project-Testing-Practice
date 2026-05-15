@@ -1,0 +1,25 @@
+{
+  "name": "odin-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist1": "git branch gh-pages",
+    "dist2": "git checkout gh-pages && git merge main --no-edit",
+    "dist3": "git add dist -f && git commit -m \"Deployment commit\"",
+    "dist4": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blargh14/Odin-Project-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Blargh14/Odin-Project-Template/issues"
+  },
+  "homepage": "https://github.com/Blargh14/Odin-Project-Template#readme"
+}
