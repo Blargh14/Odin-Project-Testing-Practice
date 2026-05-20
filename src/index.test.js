@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator, caesarCipher } from "./index.js"
+import { capitalize, reverseString, calculator, caesarCipher, analyzeArray } from "./index.js"
 
 describe('capitalize', () => {
   test('Capitalizes first letter of a string.', () => {
@@ -75,11 +75,22 @@ describe('calculator', () => {
 });
 
 describe('caesarCipher', () => {
-  test('Capitalizes first letter of a string.', () => {
+  test('Changes the position of characters on a string with the caesar cipher.', () => {
     expect(caesarCipher('xyz', 3)).toBe('abc');
   });
 
-  test('Capitalizes first letter of a string.', () => {
+  test('Uses caeser cipher on a different string.', () => {
     expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+  });
+});
+
+describe('analyzeArray', () => {
+  test('Capitalizes first letter of a string.', () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toStrictEqual({
+      average: 4,
+      min: 1,
+      max: 8,
+      length: 6
+    });
   });
 });

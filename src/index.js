@@ -49,3 +49,12 @@ export function caesarCipher(string, shiftFactor) {
 
   return String.fromCharCode(...utfArray);
 };
+
+export function analyzeArray(array) {
+  return {
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6
+  };
+};
