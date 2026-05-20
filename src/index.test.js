@@ -1,4 +1,4 @@
-import { capitalize, reverse } from "./index.js"
+import { capitalize, reverseString } from "./index.js"
 
 test('Capitalizes first letter of a string.', () => {
   expect(capitalize("uppercase")).toBe("Uppercase");
@@ -9,5 +9,9 @@ test('Capitalizes first letter of a different string.', () => {
 });
 
 test('Reverses a string', () => {
-  expect(reverse("anything")).toBe("gnihtyna");
+  expect(reverseString("anything")).toBe("gnihtyna");
+});
+
+test('Reverses a diffrent string', () => {
+  expect(reverseString("Hello")).toBe("olleH");
 });
