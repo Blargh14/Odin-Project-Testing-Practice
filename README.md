@@ -1,0 +1,1 @@
+It occurs to me that I don't really need a webpack setup for this assignment because we won't make a webpage out of it, but I needed testing to work with it regardless for the future, so probably for the best I did it anyways. .test.js is in the src folder.
