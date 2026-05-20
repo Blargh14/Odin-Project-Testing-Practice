@@ -85,12 +85,21 @@ describe('caesarCipher', () => {
 });
 
 describe('analyzeArray', () => {
-  test('Capitalizes first letter of a string.', () => {
+  test('Returns an object of information about the array.', () => {
     expect(analyzeArray([1,8,3,4,2,6])).toStrictEqual({
       average: 4,
       min: 1,
       max: 8,
       length: 6
+    });
+  });
+
+  test('Returns an object of information about a different array.', () => {
+    expect(analyzeArray([50,1000,.2,5,789,14,7,7])).toStrictEqual({
+      average: 234.025,
+      min: .2,
+      max: 1000,
+      length: 8
     });
   });
 });

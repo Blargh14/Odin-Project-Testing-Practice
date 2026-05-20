@@ -51,10 +51,22 @@ export function caesarCipher(string, shiftFactor) {
 };
 
 export function analyzeArray(array) {
-  return {
-    average: 4,
-    min: 1,
-    max: 8,
-    length: 6
-  };
+  const object = {};
+  let min = max = array[0];
+  let sum = 0;
+  object.length = array.length;
+  array.map((number) => {
+    sum += number;
+    if (number < min) {
+      min = number;
+    }
+    if (number > max) {
+      max = number;
+    }
+    console.log(sum);
+  });
+  object.min = min;
+  object.max = max;
+  object.average = sum / object.length;
+  return object;
 };
